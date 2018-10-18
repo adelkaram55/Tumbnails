@@ -1,0 +1,66 @@
+body{
+    margin: 0;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    position: relative;
+    background-image:url('../assets/img_5terre_wide.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+ 
+}
+a{
+    text-decoration: none;
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px #000;
+    padding: 30px;
+    cursor: pointer;
+
+}
+/* #next:hover{
+    color:red;
+    padding-right: 10px;
+    padding-left: 20px;
+
+} */
+
+#container h2 {
+    align-self: flex-end;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px #000;
+}
+#counter{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 3em;
+    color: aliceblue;
+    text-shadow: 1px 1px 5px #000;
+}
+#thumbnails{
+    width: 80%;
+    height: 100px;
+    background-color:black;
+    display: flex;  
+}
+.thumb{
+    background-image: url('../assets/img_lights_wide.jpg');
+    background-position: center;
+    background-size: cover;
+    width: 25%;
+    
+}
