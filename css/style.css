@@ -64,3 +64,16 @@ a{
     width: 25%;
     
 }
+@media only screen and (max-width: 700px) {
+    #thumbnails{
+        width: 50%;
+    }
+    #container{
+        width: 50%;
+        justify-content: space-around;
+    }
+    a{
+        padding: 0px;
+    }
+    
+}

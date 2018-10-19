@@ -17,7 +17,7 @@ var currentSlideIndex = 0;
 
 function caption(){   
     var image = arr[currentSlideIndex];
-    document.getElementById('caption').innerHTML =  "caption"+" "+ image;
+    document.getElementById('caption').innerHTML =  "IMAGE:"+" "+ image;
     
     
 
@@ -32,7 +32,7 @@ function check(){
  
 
      if (currentSlideIndex < 0 ){
-        currentSlideIndex = 4;
+        currentSlideIndex = arr.length-1;
     }
    else if (currentSlideIndex > arr.length - 1 ){
         currentSlideIndex = 0;
@@ -56,16 +56,25 @@ function prev(){
     changephoto();
     caption();
     count();
+   
+ 
 }
 
-function get(index){
-    slideshow.style.backgroundImage = "url('assets/"+arr[index]+"')";
-    document.getElementById('caption').innerHTML =  "caption"+" "+ arr[index];
-    // count();
-
-}
-function count(){
-
-    document.getElementById('count').innerHTML = currentSlideIndex ;
+function get(i){
+    
+    
+    slideshow.style.backgroundImage = "url('assets/"+arr[i]+"')";
+    document.getElementById('caption').innerHTML =  "IMAGE:"+" "+ arr[i];
+    document.getElementById('count').innerHTML = [i];
+    
    
 }
+function count(){
+    
+    document.getElementById('count').innerHTML = currentSlideIndex;
+
+ 
+  
+ 
+}
+
